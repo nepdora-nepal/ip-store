@@ -32,7 +32,7 @@ export function MediaLibrary({ selectedImage, onSelect }: MediaLibraryProps) {
                             <div
                                 key={key}
                                 className={cn(
-                                    "relative group cursor-pointer aspect-square rounded-lg overflow-hidden border-2 transition-all shadow-sm bg-muted/30 hover:bg-muted/50",
+                                    "relative group cursor-pointer aspect-square rounded-lg overflow-hidden  transition-all shadow-sm bg-muted/30 hover:bg-muted/50",
                                     selectedImage === key ? "border-primary ring-2 ring-primary ring-offset-2" : "border-transparent hover:border-muted-foreground/25"
                                 )}
                                 onClick={() => onSelect(key)}
